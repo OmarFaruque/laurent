@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6{padding:0; margin:0;}
+ul, p{padding:0; margin:0;}
+a, a:hover, a:focus{text-decoration:none;}
+li{list-style:none;}
+
+body{background:#000; font-family: 'Open Sans', sans-serif; font-size:12px; color:#ccc; padding:0; margin:0;}
+.wrapper{border:1px solid #666; margin-top:10px;}
+
+header{border-bottom:1px solid #666;}
+.logo a{display:block; line-height:57px;}
+.flags{padding-top:5px;}
+.flags img{margin-right:10px;}
+nav ul.menu li{line-height:35px;}
+nav ul.menu li a{padding:0 10px; color:#79cffa; border-right:1px solid #666;}
+nav ul.menu li:last-child a{border:0;}
+nav ul.menu li a:hover{color:#ccff99; text-decoration:underline;}
+
+.sidebar{padding:30px 0 10px 10px; display:block;}
+.sidebarMenu li a{display:block; color:#79cffa; line-height:20px;}
+.sidebarMenu li a:hover{color:#ccff99; text-decoration:underline;}
+.navIcon i{font-size:30px; cursor:pointer;}
+
+.contents{border-left:1px solid #666; margin-left:210px;}
+
+.introduction{padding:10px; display:table; height:100%; width:100%;}
+.introImage{width:60%; display:table-cell; vertical-align:middle;}
+.introImage img{width:100%; margin:0 auto;}
+.introContent{width:40%; display:table-cell; vertical-align:middle;}
+.introContent p{margin-bottom:10px;}
+.introContent p:last-child{margin:0;}
+
+footer{padding:10px 0;}
+
+.pages{padding:10px;}
+.products{margin-left:-10px; margin-right:-10px;}
+.products .product{width:25%; padding:0 10px 10px 10px;}
+.products .product a{display:block;}
+.product img{border:1px solid #fff; padding:1px; width:100%;}
+a.prdctNme{padding:5px 0; color:#79cffa; margin-bottom:15px;}
+a.prdctNme:hover{color:#ccff99; text-decoration:underline;}
+.singleProductImage{position:relative}
+.singleProductImage img{width:100%;}
+.productPagination{padding:10px 0;}
+.productPagination li{display:inline-block; padding:0 5px;}
+.productPagination li a, .breadCrumb a{color:#79cffa;}
+.productPagination li a:hover, .breadCrumb a:hover{color:#ccff99; text-decoration:underline;}
+.singleProductDescription{margin-top:10px;}
+.singleProductImage .link{position:absolute; right:10px; top:10px;}
+.singleProductImage .link img{width:auto;}
+.col-md-4 {width: 15%;}
+.thumbnail {padding-top: 10px; margin-bottom: 20px; line-height: 1.42857143; background-color: #000; border: none;}
+.categoryname {padding: 10px 0 20px 10px;}
+
+.contactForm{margin-top:20px;}
+.contactForm ul{margin-top:15px;}
+.contactForm ul li{ margin-bottom:5px; display:table; width:100%;}
+.contactForm ul li label, .contactForm ul li span{display:table-cell;}
+.contactForm ul li:last-child{margin:0;}
+.contactForm ul li label{font-weight:normal; margin:0; height:25px; line-height:25px; width:125px; vertical-align:middle;}
+.contactForm ul li input[type="text"]{border:0; margin:0; padding:0; width:200px; height:25px;}
+.contactForm ul li input[type="submit"]{color:#000;}
+.contactForm ul li textarea{width:100%; border:0; height:200px;}
+.mapLink{color:#79cffa; margin-top:20px;}
+.mapLink a:hover{color:#ccff99; text-decoration:underline;}
+.address{margin-top:20px;}
+
+
+
+@media(min-width:992px){
+ 	.container{margin:0 auto;}
+}
+@media(min-width:768px) and (max-width:991px){
+	.products .product{width:50%;}
+}
+@media(max-width:991px){
+	.introduction{display:block;}
+	.introImage{display:block; width:100%; text-align:center;}
+	.introContent{display:block; width:100%; text-align:center;}
+}
+@media(min-width:768px){
+	.navIcon{display:none;}
+	.sidebarMenu{display:block !important;}
+}
+@media(max-width:767px){
+	.sidebar{float:none !important; width:100%;}
+	.contents{margin:0; border:0;}
+	.sidebarMenu{display:none;}
+	.sidebarMenu li a{line-height:30px;}
+}
+@media(max-width:640px){
+	.logo, nav{float:none !important; text-align:center; width:100%;}
+	nav ul.menu{text-align:center;}
+	nav ul.menu li{float:none !important; display:inline-block;}
+	.products .product{width:50%;}
+	.contactForm ul li label, .contactForm ul li span{display:block;}
+	.contactForm ul li label.blank{display:none;}
+	header{position:relative;}
+	.flags{position:absolute; right:0; top:0;}
+}
+@media(max-width:480px){
+	.logo, nav ul.menu{text-align:left; padding:0 15px;}
+}
+@media(max-width:360px){
+	nav ul.menu li{line-height:30px;}
+	nav ul.menu li a{padding:0 3px;}
+	.products .product{width:100%; float:none !important;}
+	.flags img{display:block; margin:0 5px 5px 0;}
+	.logo img{width:225px;}
+}
+ul#crumbs li {
+    display: inline-flex;
+    margin-right: 5px;
+}
